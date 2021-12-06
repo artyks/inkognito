@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="buttons.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=K2D:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buttons</title>
+  </head>
+  <body>
+    <h1>Buttons</h1>
+    <!-- * Just a container  -->
+    <!-- <div class="buttons-wrapper"> -->
+    <!-- BUTTON CTA  -->
+    <div class="button-CTA-container">
+      <button class="button-CTA button-CTA--caption">CTA Button</button>
+      <div class="caption button-CTA__caption">
+        Aby przeglądać więcej profili i dodać ogłoszenie
+      </div>
+    </div>
+
+    <div class="button-CTA-container">
+      <button class="button-CTA button-CTA--small">CTA Button</button>
+    </div>
+
+    <div class="button-CTA-container">
+      <button class="button-CTA button-CTA--large">CTA Button</button>
+      <div class="caption button-CTA__caption">
+        Aby przeglądać więcej profili i dodać ogłoszenie
+      </div>
+    </div>
+
+    <div class="button-CTA-container">
+      <button class="button-CTA button-CTA--large button-CTA--caption">
+        CTA Button
+      </button>
+      <div class="caption button-CTA__caption">
+        Aby przeglądać więcej profili i dodać ogłoszenie
+      </div>
+    </div>
+
+    <br />
+    <!-- BUTTON PRIMARY  -->
+    <div class="button-primary-container">
+      <button class="button-primary button-primary--caption">Gotowe!</button>
+      <div class="caption button-primary__caption">
+        Aby przeglądać więcej profili i dodać ogłoszenie
+      </div>
+    </div>
+    <button class="button-primary button-primary--small">Gotowe!</button>
+    <button class="button-primary button-primary--large">Gotowe!</button>
+    <br />
+    <!-- BUTTON BASIC  -->
+    <button class="button-basic">Dni</button>
+    <button class="button-basic button-basic--small">Default small</button>
+    <br />
+    <!-- Button TERTIARY  -->
+    <button class="button-tertiary">Unimportant</button>
+    <button class="button-tertiary button-tertiary--small">Unimportant</button>
+    <br />
+    <!-- BUTTON LINK  -->
+    <button class="button-link">Unimportant</button>
+    <button class="button-link button-link--small">Unimportant</button>
+    <br />
+    <!-- RADIO BUTTONS -->
+    <div class="radio-button-container">
+      <label class="radio-button">
+        <input
+          class="dot radio-button__dot"
+          type="radio"
+          name="NAME"
+          value="1"
+        />
+        <span class="text-wrapper radio-button__text-wrapper">Godziny</span>
+      </label>
+      <label class="radio-button">
+        <input
+          class="dot radio-button__dot"
+          type="radio"
+          name="NAME"
+          value="2"
+        />
+        <span
+          class="
+            text-wrapper
+            radio-button__text-wrapper radio-button__text-wrapper--height-small
+          "
+          >Godziny</span
+        >
+      </label>
+      <label class="radio-button">
+        <input
+          class="dot radio-button__dot"
+          type="radio"
+          name="NAME"
+          value="3"
+        />
+        <span
+          class="
+            text-wrapper
+            radio-button__text-wrapper radio-button__text-wrapper--height-small
+          "
+          >Godziny</span
+        >
+      </label>
+    </div>
+    <br />
+    <!-- HORIZontal RADIO BUTTON -->
+    <div class="radio-button-container radio-button-container--horizontal">
+      <label class="radio-button">
+        <input
+          class="dot radio-button__dot radio-button__dot--hide"
+          type="radio"
+          name="NAME1"
+          value="1"
+        />
+        <span
+          class="
+            text-wrapper
+            radio-button__text-wrapper
+            radio-button__text-wrapper--height-small
+            radio-button__text-wrapper--width-small
+          "
+          >Godziny</span
+        >
+      </label>
+      <label class="radio-button">
+        <input
+          class="dot radio-button__dot radio-button__dot--hide"
+          type="radio"
+          name="NAME1"
+          value="2"
+        />
+        <span
+          class="
+            text-wrapper
+            radio-button__text-wrapper
+            radio-button__text-wrapper--height-small
+            radio-button__text-wrapper--width-small
+          "
+          >Godziny</span
+        >
+      </label>
+    </div>
+    <br />
+    <div class="radio-button-container radio-button-container--horizontal">
+      <label class="radio-button">
+        <input
+          class="dot radio-button__dot radio-button__dot--hide"
+          type="radio"
+          name="NAME1"
+          value="1"
+        />
+        <span
+          class="
+            text-wrapper
+            radio-button__text-wrapper radio-button__text-wrapper--width-small
+          "
+          >Godziny</span
+        >
+      </label>
+      <label class="radio-button">
+        <input
+          class="dot radio-button__dot radio-button__dot--hide"
+          type="radio"
+          name="NAME1"
+          value="2"
+        />
+        <span
+          class="
+            text-wrapper
+            radio-button__text-wrapper radio-button__text-wrapper--width-small
+          "
+          >Godziny</span
+        >
+      </label>
+    </div>
+    <br />
+
+    <!-- RADIO BUTTON WITH DATE PICKER  -->
+    <div class="radio-button-container radio-button-container--horizontal">
+      <label class="radio-button">
+        <input
+          class="dot radio-button__dot radio-button__dot--hide"
+          type="radio"
+          name="NAME1"
+          value="1"
+        />
+        <span
+          class="
+            text-wrapper
+            radio-button__text-wrapper
+            radio-button__text-wrapper--height-small
+            radio-button__text-wrapper--width-small
+          "
+          >Godziny</span
+        >
+      </label>
+      <label class="radio-button">
+        <input
+          class="dot radio-button__dot radio-button__dot--hide"
+          type="radio"
+          name="NAME1"
+          value="2"
+        />
+        <span
+          class="
+            text-wrapper
+            radio-button__text-wrapper
+            radio-button__text-wrapper--height-small
+            radio-button__text-wrapper--width-small
+          "
+        >
+          Godziny ​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+          <input
+            class="date-picker text-wrapper__date-picker"
+            type="text"
+            name="NAME1"
+            placeholder="12 / 02 / 2021"
+            pattern="[0-9]{2}\s/\s[0-9]{2}\s/\s[0-9]{4}"
+          />
+        </span>
+      </label>
+    </div>
+
+    <br />
+    <!-- </div> -->
+    <!-- * just a container  -->
+    <div style="width: 520px; height: 45px">
+      <!-- TAB SLIDER -->
+      <div class="tab-slider">
+        <div class="chosen-bg tab-slider__chosen-bg"></div>
+        <label class="tab-item tab-slider__tab-item">
+          <input
+            class="dot tab-item__dot tab-item__dot--hide"
+            type="radio"
+            name="NAMESLIDER"
+            value="1"
+          />
+          <span class="text-wrapper tab-item__text-wrapper">Dorywczo</span>
+        </label>
+        <label class="tab-item tab-slider__tab-item">
+          <input
+            class="dot tab-item__dot tab-item__dot--hide"
+            type="radio"
+            name="NAMESLIDER"
+            value="2"
+          />
+          <span class="text-wrapper tab-item__text-wrapper">Dorywczo</span>
+        </label>
+        <label class="tab-item tab-slider__tab-item">
+          <input
+            class="dot tab-item__dot tab-item__dot--hide"
+            type="radio"
+            name="NAMESLIDER"
+            value="3"
+          />
+          <span class="text-wrapper tab-item__text-wrapper">Dorywczo</span>
+        </label>
+      </div>
+    </div>
+
+    <br />
+
+    <!-- * container-->
+    <div style="width: 620px; height: 65px">
+      <!-- TAB SLIDER EMOJI (close icon is hidden) -->
+      <div class="tab-slider-emoji">
+        <div class="tab-items-wrapper tab-slider-emoji__tab-items-wrapper">
+          <div class="chosen-bg tab-items-wrapper__chosen-bg"></div>
+          <label class="tab-item tab-items-wrapper__tab-item">
+            <input
+              class="dot tab-item__dot tab-item__dot--hide"
+              type="radio"
+              name="NAMESLIDER"
+              value="1"
+            />
+            <div class="text-wrapper tab-item__text-wrapper">
+              <span class="emoji text-wrapper__emoji">😍</span>
+              <span class="text text-wrapper__text">Super</span>
+            </div>
+          </label>
+          <label class="tab-item tab-items-wrapper__tab-item">
+            <input
+              class="dot tab-item__dot tab-item__dot--hide"
+              type="radio"
+              name="NAMESLIDER"
+              value="2"
+            />
+            <span class="text-wrapper tab-item__text-wrapper"
+              ><span class="emoji text-wrapper__emoji">😍</span
+              ><span class="text text-wrapper__text">Neutralnie</span></span
+            >
+          </label>
+          <label class="tab-item tab-items-wrapper__tab-item">
+            <input
+              class="dot tab-item__dot tab-item__dot--hide"
+              type="radio"
+              name="NAMESLIDER"
+              value="3"
+            />
+            <span class="text-wrapper tab-item__text-wrapper"
+              ><span class="emoji text-wrapper__emoji">😍</span
+              ><span class="text text-wrapper__text">Zadzw. pózniej</span></span
+            >
+          </label>
+          <label class="tab-item tab-items-wrapper__tab-item">
+            <input
+              class="dot tab-item__dot tab-item__dot--hide"
+              type="radio"
+              name="NAMESLIDER"
+              value="3"
+            />
+            <span class="text-wrapper tab-item__text-wrapper"
+              ><span class="emoji text-wrapper__emoji">😍</span
+              ><span class="text text-wrapper__text">Zadzw. pózniej</span></span
+            >
+          </label>
+          <label class="tab-item tab-items-wrapper__tab-item">
+            <input
+              class="dot tab-item__dot tab-item__dot--hide"
+              type="radio"
+              name="NAMESLIDER"
+              value="3"
+            />
+            <span class="text-wrapper tab-item__text-wrapper"
+              ><span class="emoji text-wrapper__emoji">😍</span
+              ><span class="text text-wrapper__text">Zadzw. pózniej</span></span
+            >
+          </label>
+        </div>
+        <div
+          class="
+            close-icon
+            tab-slider-emoji__close-icon tab-slider-emoji__close-icon--hide
+          "
+        >
+          <svg
+            width="12"
+            height="12"
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 1L6 6M11 11L6 6M1 11L6 6M11 1L6 6"
+              stroke="#16205E"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <!-- * container-->
+    <div style="width: 345px; height: 65px">
+      <!-- TAB SLIDER EMOJI (close icon is hidden) -->
+      <div class="tab-slider-emoji">
+        <div class="tab-items-wrapper tab-slider-emoji__tab-items-wrapper">
+          <div class="chosen-bg tab-items-wrapper__chosen-bg"></div>
+          <label class="tab-item tab-items-wrapper__tab-item">
+            <input
+              class="dot tab-item__dot tab-item__dot--hide"
+              type="radio"
+              name="NAMESLIDER"
+              value="1"
+            />
+            <div class="text-wrapper tab-item__text-wrapper">
+              <span class="emoji text-wrapper__emoji">😍</span>
+              <span class="text text-wrapper__text">Super</span>
+            </div>
+          </label>
+          <label class="tab-item tab-items-wrapper__tab-item">
+            <input
+              class="dot tab-item__dot tab-item__dot--hide"
+              type="radio"
+              name="NAMESLIDER"
+              value="2"
+            />
+            <span class="text-wrapper tab-item__text-wrapper"
+              ><span class="emoji text-wrapper__emoji">😍</span
+              ><span class="text text-wrapper__text">Neutralnie</span></span
+            >
+          </label>
+          <label class="tab-item tab-items-wrapper__tab-item">
+            <input
+              class="dot tab-item__dot tab-item__dot--hide"
+              type="radio"
+              name="NAMESLIDER"
+              value="3"
+            />
+            <span class="text-wrapper tab-item__text-wrapper"
+              ><span class="emoji text-wrapper__emoji">😍</span
+              ><span class="text text-wrapper__text">Zadzw. pózniej</span></span
+            >
+          </label>
+          <label class="tab-item tab-items-wrapper__tab-item">
+            <input
+              class="dot tab-item__dot tab-item__dot--hide"
+              type="radio"
+              name="NAMESLIDER"
+              value="3"
+            />
+            <span class="text-wrapper tab-item__text-wrapper"
+              ><span class="emoji text-wrapper__emoji">😍</span
+              ><span class="text text-wrapper__text">Zadzw. pózniej</span></span
+            >
+          </label>
+          <label class="tab-item tab-items-wrapper__tab-item">
+            <input
+              class="dot tab-item__dot tab-item__dot--hide"
+              type="radio"
+              name="NAMESLIDER"
+              value="3"
+            />
+            <span class="text-wrapper tab-item__text-wrapper"
+              ><span class="emoji text-wrapper__emoji">😍</span
+              ><span class="text text-wrapper__text">Zadzw. pózniej</span></span
+            >
+          </label>
+        </div>
+        <div class="close-icon tab-slider-emoji__close-icon">
+          <svg
+            width="12"
+            height="12"
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 1L6 6M11 11L6 6M1 11L6 6M11 1L6 6"
+              stroke="#16205E"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <!-- CHECKBOXES 2 COL -->
+    <div class="checkbox-container checkbox-container--2-columns">
+      <label class="checkbox-button checkbox-container__checkbox-button">
+        <input
+          class="dot checkbox-button__dot checkbox-button__dot--hide"
+          type="checkbox"
+          name="NAME1"
+          value="1"
+        />
+        <span class="text-wrapper checkbox-button__text-wrapper">1Godziny</span>
+      </label>
+      <label class="checkbox-button checkbox-container__checkbox-button">
+        <input
+          class="dot checkbox-button__dot checkbox-button__dot--hide"
+          type="checkbox"
+          name="NAME1"
+          value="1"
+        />
+        <span class="text-wrapper checkbox-button__text-wrapper"
+          >2222Godziny</span
+        >
+      </label>
+      <label class="checkbox-button checkbox-container__checkbox-button">
+        <input
+          class="dot checkbox-button__dot checkbox-button__dot--hide"
+          type="checkbox"
+          name="NAME1"
+          value="1"
+        />
+        <span class="text-wrapper checkbox-button__text-wrapper"
+          >333333dziny</span
+        >
+      </label>
+      <label class="checkbox-button checkbox-container__checkbox-button">
+        <input
+          class="dot checkbox-button__dot checkbox-button__dot--hide"
+          type="checkbox"
+          name="NAME1"
+          value="1"
+        />
+        <span class="text-wrapper checkbox-button__text-wrapper"
+          >44333dziny</span
+        >
+      </label>
+    </div>
+    <br />
+    <!-- CHECKBOXES 1 COL -->
+    <div class="checkbox-container checkbox-container--1-columns">
+      <label class="checkbox-button checkbox-container__checkbox-button">
+        <input
+          class="dot checkbox-button__dot checkbox-button__dot--hide"
+          type="checkbox"
+          name="NAME1"
+          value="1"
+        />
+        <span class="text-wrapper checkbox-button__text-wrapper">1Godziny</span>
+      </label>
+      <label class="checkbox-button checkbox-container__checkbox-button">
+        <input
+          class="dot checkbox-button__dot checkbox-button__dot--hide"
+          type="checkbox"
+          name="NAME1"
+          value="1"
+        />
+        <span class="text-wrapper checkbox-button__text-wrapper"
+          >2222Godziny</span
+        >
+      </label>
+      <label class="checkbox-button checkbox-container__checkbox-button">
+        <input
+          class="dot checkbox-button__dot checkbox-button__dot--hide"
+          type="checkbox"
+          name="NAME1"
+          value="1"
+        />
+        <span class="text-wrapper checkbox-button__text-wrapper"
+          >333333dziny</span
+        >
+      </label>
+      <label class="checkbox-button checkbox-container__checkbox-button">
+        <input
+          class="dot checkbox-button__dot checkbox-button__dot--hide"
+          type="checkbox"
+          name="NAME1"
+          value="1"
+        />
+        <span class="text-wrapper checkbox-button__text-wrapper"
+          >44333dziny</span
+        >
+      </label>
+    </div>
+
+    <br />
+    <!-- CHECKBOXES 3 COL -->
+    <div class="checkbox-container checkbox-container--3-columns">
+      <label class="checkbox-button checkbox-container__checkbox-button">
+        <input
+          class="dot checkbox-button__dot checkbox-button__dot--hide"
+          type="checkbox"
+          name="NAME1"
+          value="1"
+        />
+        <span class="text-wrapper checkbox-button__text-wrapper">1Godziny</span>
+      </label>
+      <label class="checkbox-button checkbox-container__checkbox-button">
+        <input
+          class="dot checkbox-button__dot checkbox-button__dot--hide"
+          type="checkbox"
+          name="NAME1"
+          value="1"
+        />
+        <span class="text-wrapper checkbox-button__text-wrapper"
+          >2222Godziny</span
+        >
+      </label>
+      <label class="checkbox-button checkbox-container__checkbox-button">
+        <input
+          class="dot checkbox-button__dot checkbox-button__dot--hide"
+          type="checkbox"
+          name="NAME1"
+          value="1"
+        />
+        <span class="text-wrapper checkbox-button__text-wrapper"
+          >333333dziny</span
+        >
+      </label>
+      <label class="checkbox-button checkbox-container__checkbox-button">
+        <input
+          class="dot checkbox-button__dot checkbox-button__dot--hide"
+          type="checkbox"
+          name="NAME1"
+          value="1"
+        />
+        <span class="text-wrapper checkbox-button__text-wrapper"
+          >44333dziny</span
+        >
+      </label>
+      <label class="checkbox-button checkbox-container__checkbox-button">
+        <input
+          class="dot checkbox-button__dot checkbox-button__dot--hide"
+          type="checkbox"
+          name="NAME1"
+          value="1"
+        />
+        <span class="text-wrapper checkbox-button__text-wrapper"
+          >333333dziny</span
+        >
+      </label>
+      <label class="checkbox-button checkbox-container__checkbox-button">
+        <input
+          class="dot checkbox-button__dot checkbox-button__dot--hide"
+          type="checkbox"
+          name="NAME1"
+          value="1"
+        />
+        <span class="text-wrapper checkbox-button__text-wrapper"
+          >44333dziny</span
+        >
+      </label>
+      <label class="checkbox-button checkbox-container__checkbox-button">
+        <input
+          class="dot checkbox-button__dot checkbox-button__dot--hide"
+          type="checkbox"
+          name="NAME1"
+          value="1"
+        />
+        <span class="text-wrapper checkbox-button__text-wrapper"
+          >44333dziny</span
+        >
+      </label>
+      <label class="checkbox-button checkbox-container__checkbox-button">
+        <input
+          class="dot checkbox-button__dot checkbox-button__dot--hide"
+          type="checkbox"
+          name="NAME1"
+          value="1"
+        />
+        <span class="text-wrapper checkbox-button__text-wrapper"
+          >333333dziny</span
+        >
+      </label>
+      <label class="checkbox-button checkbox-container__checkbox-button">
+        <input
+          class="dot checkbox-button__dot checkbox-button__dot--hide"
+          type="checkbox"
+          name="NAME1"
+          value="1"
+        />
+        <span class="text-wrapper checkbox-button__text-wrapper"
+          >44333dziny</span
+        >
+      </label>
+    </div>
+
+    <br />
+    <!-- CHIPS CHECKBOXES -->
+    <div class="checkbox-chips-container">
+      <label class="checkbox-chip checkbox-chips-container__checkbox-chip">
+        <input
+          class="dot checkbox-chip__dot checkbox-chip__dot--hide"
+          type="checkbox"
+          name="NAME1"
+          value="1"
+        />
+        <span class="text-wrapper checkbox-chip__text-wrapper">edukacją</span>
+      </label>
+      <label class="checkbox-chip checkbox-chips-container__checkbox-chip">
+        <input
+          class="dot checkbox-chip__dot checkbox-chip__dot--hide"
+          type="checkbox"
+          name="NAME1"
+          value="1"
+        />
+        <span class="text-wrapper checkbox-chip__text-wrapper"
+          >kreatywnośćą</span
+        >
+      </label>
+      <label class="checkbox-chip checkbox-chips-container__checkbox-chip">
+        <input
+          class="dot checkbox-chip__dot checkbox-chip__dot--hide"
+          type="checkbox"
+          name="NAME1"
+          value="1"
+        />
+        <span class="text-wrapper checkbox-chip__text-wrapper"
+          >grami i zabawami</span
+        >
+      </label>
+      <label class="checkbox-chip checkbox-chips-container__checkbox-chip">
+        <input
+          class="dot checkbox-chip__dot checkbox-chip__dot--hide"
+          type="checkbox"
+          name="NAME1"
+          value="1"
+        />
+        <span class="text-wrapper checkbox-chip__text-wrapper">muzyką</span>
+      </label>
+      <label class="checkbox-chip checkbox-chips-container__checkbox-chip">
+        <input
+          class="dot checkbox-chip__dot checkbox-chip__dot--hide"
+          type="checkbox"
+          name="NAME1"
+          value="1"
+        />
+        <span class="text-wrapper checkbox-chip__text-wrapper"
+          >pomocą w odrabianiu lekcji</span
+        >
+      </label>
+      <label class="checkbox-chip checkbox-chips-container__checkbox-chip">
+        <input
+          class="dot checkbox-chip__dot checkbox-chip__dot--hide"
+          type="checkbox"
+          name="NAME1"
+          value="1"
+        />
+        <span class="text-wrapper checkbox-chip__text-wrapper">1Godziny</span>
+      </label>
+      <label class="checkbox-chip checkbox-chips-container__checkbox-chip">
+        <input
+          class="dot checkbox-chip__dot checkbox-chip__dot--hide"
+          type="checkbox"
+          name="NAME1"
+          value="1"
+        />
+        <span class="text-wrapper checkbox-chip__text-wrapper">1Godziny</span>
+      </label>
+    </div>
+
+    <br />
+    <!-- ROUND CHECKBOXES with ICONS (POMOC DOMOWA)-->
+    <div class="round-checkbox-container">
+      <label
+        class="checkbox-wrapper round-checkbox-container__checkbox-wrapper"
+      >
+        <input
+          class="dot checkbox-wrapper__dot checkbox-wrapper__dot--hide"
+          type="checkbox"
+          name="NAME1"
+          value="1"
+        />
+        <div
+          class="
+            circle-icon
+            checkbox-wrapper__circle-icon checkbox-wrapper__circle-icon--laundry
+          "
+        ></div>
+        <span class="text-wrapper checkbox-wrapper__text-wrapper">Pranie</span>
+      </label>
+      <label
+        class="checkbox-wrapper round-checkbox-container__checkbox-wrapper"
+      >
+        <input
+          class="dot checkbox-wrapper__dot checkbox-wrapper__dot--hide"
+          type="checkbox"
+          name="NAME1"
+          value="1"
+        />
+        <div
+          class="
+            circle-icon
+            checkbox-wrapper__circle-icon checkbox-wrapper__circle-icon--ironing
+          "
+        ></div>
+        <span class="text-wrapper checkbox-wrapper__text-wrapper"
+          >Prasowanie</span
+        >
+      </label>
+      <label
+        class="checkbox-wrapper round-checkbox-container__checkbox-wrapper"
+      >
+        <input
+          class="dot checkbox-wrapper__dot checkbox-wrapper__dot--hide"
+          type="checkbox"
+          name="NAME1"
+          value="1"
+        />
+        <div
+          class="
+            circle-icon
+            checkbox-wrapper__circle-icon
+            checkbox-wrapper__circle-icon--cleaning
+          "
+        ></div>
+        <span class="text-wrapper checkbox-wrapper__text-wrapper"
+          >Sprzątanie</span
+        >
+      </label>
+      <label
+        class="checkbox-wrapper round-checkbox-container__checkbox-wrapper"
+      >
+        <input
+          class="dot checkbox-wrapper__dot checkbox-wrapper__dot--hide"
+          type="checkbox"
+          name="NAME1"
+          value="1"
+        />
+        <div
+          class="
+            circle-icon
+            checkbox-wrapper__circle-icon
+            checkbox-wrapper__circle-icon--maintainig-cleaniness
+          "
+        ></div>
+        <span class="text-wrapper checkbox-wrapper__text-wrapper"
+          >Utrzymanie czystości</span
+        >
+      </label>
+      <label
+        class="checkbox-wrapper round-checkbox-container__checkbox-wrapper"
+      >
+        <input
+          class="dot checkbox-wrapper__dot checkbox-wrapper__dot--hide"
+          type="checkbox"
+          name="NAME1"
+          value="1"
+        />
+        <div
+          class="
+            circle-icon
+            checkbox-wrapper__circle-icon checkbox-wrapper__circle-icon--cooking
+          "
+        ></div>
+        <span class="text-wrapper checkbox-wrapper__text-wrapper"
+          >Gotowanie</span
+        >
+      </label>
+      <label
+        class="checkbox-wrapper round-checkbox-container__checkbox-wrapper"
+      >
+        <input
+          class="dot checkbox-wrapper__dot checkbox-wrapper__dot--hide"
+          type="checkbox"
+          name="NAME1"
+          value="1"
+        />
+        <div
+          class="
+            circle-icon
+            checkbox-wrapper__circle-icon
+            checkbox-wrapper__circle-icon--pet-care
+          "
+        ></div>
+        <span class="text-wrapper checkbox-wrapper__text-wrapper"
+          >Opieka nad zwierzętami</span
+        >
+      </label>
+      <label
+        class="checkbox-wrapper round-checkbox-container__checkbox-wrapper"
+      >
+        <input
+          class="dot checkbox-wrapper__dot checkbox-wrapper__dot--hide"
+          type="checkbox"
+          name="NAME1"
+          value="1"
+        />
+        <div
+          class="
+            circle-icon
+            checkbox-wrapper__circle-icon
+            checkbox-wrapper__circle-icon--plant-care
+          "
+        ></div>
+        <span class="text-wrapper checkbox-wrapper__text-wrapper"
+          >Pielęgnacja roślin</span
+        >
+      </label>
+      <label
+        class="checkbox-wrapper round-checkbox-container__checkbox-wrapper"
+      >
+        <input
+          class="dot checkbox-wrapper__dot checkbox-wrapper__dot--hide"
+          type="checkbox"
+          name="NAME1"
+          value="1"
+        />
+        <div
+          class="
+            circle-icon
+            checkbox-wrapper__circle-icon
+            checkbox-wrapper__circle-icon--shopping
+          "
+        ></div>
+        <span class="text-wrapper checkbox-wrapper__text-wrapper">Zakupy</span>
+      </label>
+    </div>
+    <br />
+    <!-- CIRCLE BUTTON (+ -) -->
+    <!-- * Just container -->
+    <div class="buttons-wrapper">
+      <button class="circle-button circle-button--minus"></button>
+      <button class="circle-button circle-button--plus"></button>
+      <button
+        class="circle-button circle-button--minus circle-button--small"
+      ></button>
+      <button
+        class="circle-button circle-button--plus circle-button--small"
+      ></button>
+    </div>
+    <br />
+    <!-- CIRCLE ATTACHMENT BUTTON -->
+    <!-- * Just container -->
+    <div class="buttons-wrapper">
+      <button class="circle-attachment-button"></button>
+      <button
+        class="circle-attachment-button circle-attachment-button--small"
+      ></button>
+    </div>
+  </body>
+</html>

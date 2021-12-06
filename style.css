@@ -1,0 +1,178 @@
+/* ? DESKTOP */
+body {
+  padding: 20px 50px;
+  font-family: var(--main-font-family);
+  font-size: var(--default-font-size);
+  font-weight: var(--default-font-weight);
+  color: var(--default-font-color);
+  background-color: var(--main-bg-color);
+}
+
+:root {
+  --main-bg-color: rgba(241, 251, 249, 1);
+  --main-font-family: "Poppins", sans-serif;
+
+  --default-font-color: #16205e;
+  --default-font-size: 18px;
+  --default-font-weight: 300;
+
+  /* BUTTONS */
+  --button-font-weight: 500;
+  --button-font-color: #16939b;
+
+  --button-border-radius: 20px;
+
+  --button-height: 60px;
+  --button-width: 160px;
+
+  --button-caption-opacity: 0.6;
+
+  --button-small-font-size: 16px;
+  --button-small-height: 45px;
+
+  --button-large-font-size: 22px;
+  --button-large-height: 70px;
+  --button-large-width: 352px;
+
+  --button-cta-font-color: #16205e;
+  --button-cta-bg-color: #bde3ff;
+  --button-cta-border: 0.8px solid #a4d9ff;
+  --button-cta-shadow: 0px 5px 20px -3px rgba(129, 196, 244, 0.5);
+  --button-cta-hover-shadow: 0px 5px 20px -3px rgba(129, 196, 244, 0.5);
+  --button-CTA-large-caption-font: 300 16px "K2D", sans-serif;
+  --button-CTA-default-caption-font: 300 12px "K2D", sans-serif;
+
+  --button-primary-bg-color: #e7fffa;
+  --button-primary-border: 0.8px solid rgba(22, 147, 155, 0.39);
+  --buton-primary-shadow: 0px 5px 25px -3px rgba(22, 147, 155, 0.25);
+  --buton-primary-hover-shadow: 0px 5px 25px -3px rgba(22, 147, 155, 0.25);
+  --button-primary-large-caption-font: 300 16px "K2D", sans-serif;
+  --button-primary-default-caption-font: 300 12px "K2D", sans-serif;
+
+  --button-basic-bg-color: #fff;
+  --button-basic-border: 0.8px solid rgba(22, 147, 155, 0.39);
+  --buton-basic-shadow: 0px 5px 25px -5px rgba(22, 147, 155, 0.25);
+  --buton-basic-hover-shadow: 0px 5px 25px -5px rgba(22, 147, 155, 0.25);
+
+  --button-tertiary-bg-color: transparent;
+  --button-tertiary-border: 1px solid rgba(22, 147, 155, 0.39);
+  --buton-tertiary-hover-border: 2px solid rgba(22, 147, 155, 0.3);
+  --buton-tertiary-active-border: 2px solid rgba(22, 147, 155, 0.3);
+  --buton-tertiary-active-bg-color: #fff;
+
+  --button-link-font-color: #16205e;
+  --button-link-bg-color: transparent;
+  --button-link-border: none;
+  --button-link-hover-text-decoration: underline;
+
+  --radio-button-width: 260px;
+
+  --checkbox-button-stroke-color: #9cd3d5;
+  --checkbox-button-font-size: 16px;
+  --checkbox-button-font-color: #16205e;
+  --checkbox-button-font-weight: 300;
+  --checkbox-button-active-font-weight: 300;
+  --checkbox-button-active-bg-color: #c7ede6;
+  --checkbox-button-active-border: 2px solid rgba(22, 147, 155, 0.8);
+  --checkbox-button-hover-border: 2px solid rgba(22, 147, 155, 0.3);
+
+  --checkbox-chip-font-size: 16px;
+  --checkbox-chip-font-color: #16205e;
+  --checkbox-chip-font-weight: 300;
+  --checkbox-chip-padding: 20px;
+  --checkbox-chip-height: 45px;
+  --checkbox-chip-active-bg-color: #c7ede6;
+  --checkbox-chip-active-border: 2px solid rgba(22, 147, 155, 0.8);
+  --checkbox-chip-hover-border: 2px solid rgba(22, 147, 155, 0.3);
+
+  /* TAB SLIDER */
+
+  --tab-slider-height: 45px;
+  --tab-slider-border-radius: 20px;
+  --tab-slider-bg-color: transparent;
+  --tab-slider-border: 1px solid rgba(22, 32, 94, 0.3);
+
+  --tab-slider-font-size: 16px;
+  --tab-slider-emoji-font-size: 24px;
+  --tab-slider-emoji-active-font-size: 26px;
+
+  --tab-slider-hover-bg-color: rgba(22, 32, 94, 0.05);
+
+  --tab-slider-active-bg-color: #fff;
+  --tab-slider-active-border: 1px solid var(--tab-slider-active-border-color);
+  --tab-slider-active-border-color: #b9bccf;
+
+  /* ROUND CHECKBOX with ICON */
+  --round-checkbox-circle-radius: 115px;
+  --round-checkbox-font-weight: 300;
+  --round-checkbox-active-font-weight: 300;
+  --round-checkbox-font-size: 16px;
+  --round-checkbox-font-color: #16205e;
+
+  --round-checkbox-border: 1px solid rgba(22, 147, 155, 0.39);
+  --round-checkbox-hover-border: 2px solid rgba(22, 147, 155, 0.3);
+  --round-checkbox-active-border: 2px solid rgba(22, 147, 155, 0.8);
+
+  --round-checkbox-active-bg-color: #c7ede6;
+
+  /* CIRCLE BUTTON */
+  --circle-button-bg-color: transparent;
+  --circle-button-border: 1px solid rgba(22, 147, 155, 0.39);
+  --circle-button-hover-border: 2px solid rgba(22, 147, 155, 0.3);
+  --circle-button-active-border: 2px solid rgba(22, 147, 155, 0.8);
+
+  --circle-button-active-bg-color: #c7ede6;
+
+  /* CIRCLE ATTACHMENT BUTTON */
+  --circle-attachment-button-primary-bg-color: var(--button-primary-bg-color);
+  --circle-attachment-button-border: 1px solid rgba(22, 147, 155, 0.39);
+  --circle-attachment-button-primary-shadow: var(--buton-primary-shadow);
+
+  --circle-attachment-button-small-bg-color: var(--button-basic-bg-color);
+  --circle-attachment-button-small-shadow: var(--buton-basic-shadow);
+}
+
+/* ? TABLET(temporary) AND MOBILE  */
+
+@media (max-width: 1200px) {
+  :root {
+    /* BUTTONS MOBILE */
+    --button-height: 60px;
+    --button-width: 167px;
+
+    --button-small-font-size: 16px;
+    --button-small-height: 45px;
+
+    --button-large-font-size: 18px;
+    --button-large-height: 60px;
+    --button-large-width: 256px;
+
+    --button-CTA-large-caption-font: 300 16px "K2D", sans-serif;
+    --button-CTA-default-caption-font: 300 12px "K2D", sans-serif;
+
+    --button-primary-large-caption-font: 300 16px "K2D", sans-serif;
+    --button-primary-default-caption-font: 300 12px "K2D", sans-serif;
+
+    --radio-button-width: 167px;
+
+    /* TAB SLIDER MOBILE  */
+    --tab-slider-height: 45px;
+    --tab-slider-border-radius: 20px;
+    --tab-slider-bg-color: transparent;
+    --tab-slider-border: 1px solid rgba(22, 32, 94, 0.3);
+
+    --tab-slider-font-size: 16px;
+    --tab-slider-emoji-font-size: 20px;
+    --tab-slider-emoji-active-font-size: 22px;
+
+    --tab-slider-hover-bg-color: rgba(22, 32, 94, 0.05);
+
+    --tab-slider-active-bg-color: #fff;
+    --tab-slider-active-border: 1px solid var(--tab-slider-active-border-color);
+    --tab-slider-active-border-color: #b9bccf;
+
+    /* ROUND CHECKBOX with ICON  MOBILE */
+    --round-checkbox-circle-radius: 79px;
+    --round-checkbox-font-size: 12px;
+  }
+}
