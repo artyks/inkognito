@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/text-inputs-vars.css" />
+    <link rel="stylesheet" href="styles/text-inputs.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=K2D:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Inputs</title>
+  </head>
+  <body>
+    <h1>Text Inputs</h1>
+
+    <!-- * Just a container  -->
+    <div
+      class="container"
+      style="
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        width: 600px;
+      "
+    >
+      <div class="text-input">
+        <input
+          type="text"
+          id="1"
+          class="field text-input__field"
+          name="NAME1"
+          placeholder="Enter your email"
+        />
+        <label for="1" class="label text-input__label">
+          <span class="asterisk label__asterisk label__asterisk--show">*</span>
+          Email
+        </label>
+        <div class="caption text-input__caption">
+          Hasło musi zawierać co najmniej 8 znaków!
+        </div>
+      </div>
+
+      <br />
+      <!-- PASSWORD INPUT  -->
+      <div class="text-input">
+        <input
+          type="password"
+          id="1"
+          class="field text-input__field text-input__field--password"
+          name="NAME1"
+          minlength="8"
+          placeholder="Enter your Haslo"
+          required
+        />
+        <input
+          type="checkbox"
+          class="pswrd-toggler text-input__pswrd-toggler"
+          onclick="passwordVisibilityToggle()"
+        />
+        <label for="1" class="label text-input__label">
+          <span class="asterisk label__asterisk label__asterisk--show">*</span>
+          Haslo
+        </label>
+        <div class="caption text-input__caption">
+          Hasło musi zawierać co najmniej 8 znaków!
+        </div>
+      </div>
+      <br />
+      <!-- ERROR INPUT  -->
+      <div class="text-input text-input--error">
+        <input
+          type="password"
+          id="1"
+          class="field text-input__field"
+          name="NAME1"
+          placeholder="Enter your email"
+        />
+        <label for="1" class="label text-input__label">
+          <span class="asterisk label__asterisk label__asterisk--show">*</span>
+          Error
+        </label>
+        <div class="caption text-input__caption">
+          Hasło musi zawierać co najmniej 8 znaków!
+        </div>
+      </div>
+      <br />
+      <!-- SUCCESS INPUT  -->
+      <div class="text-input text-input--success">
+        <input
+          id="1"
+          class="field text-input__field"
+          name="NAME1"
+          placeholder="Enter your email"
+        />
+        <label for="1" class="label text-input__label">
+          <span class="asterisk label__asterisk label__asterisk--show">*</span>
+          Success
+        </label>
+        <div class="caption text-input__caption">
+          Hasło musi zawierać co najmniej 8 znaków!
+        </div>
+      </div>
+
+      <br />
+      <!-- PHONE INPUT  -->
+      <div class="text-input text-input--tel text-input--small">
+        <input
+          type="tel"
+          id="1"
+          class="field text-input__field text-input__field--tel"
+          name="PHONE"
+          placeholder="48 888 888 888"
+          autocomplete="off"
+        />
+        <label for="1" class="label text-input__label">
+          <span class="asterisk label__asterisk">*</span>
+          Telefon
+        </label>
+      </div>
+      <!-- PHONE CODE INPUT  -->
+      <br />
+      <div class="text-input text-input--tel-code text-input--small">
+        <input
+          type="text"
+          id="1"
+          class="field text-input__field text-input__field--tel-code"
+          name="PHONE-code"
+          placeholder="000 000"
+          autocomplete="off"
+        />
+        <label for="1" class="label text-input__label">
+          <span class="asterisk label__asterisk">*</span>
+          Kod z SMS
+        </label>
+      </div>
+
+      <br />
+      <!-- DROPDOWN SELECT INPUT (GENDER) -->
+      <div
+        class="
+          text-input
+          text-input--select-dropdown
+          text-input--gender
+          text-input--small
+        "
+      >
+        <select
+          type="text"
+          id="1"
+          class="
+            field
+            text-input__field
+            text-input__field--select-dropdown
+            text-input__field--gender
+          "
+          name="GENDER"
+          placeholder="000 000"
+          autocomplete="off"
+        >
+          <option value="Wyberz">Wyberz</option>
+          <option value="Kobieta">Kobieta</option>
+          <option value="Mieszczyzna">Mieszczyzna</option>
+        </select>
+        <label for="1" class="label text-input__label">
+          <span class="asterisk label__asterisk">*</span>
+          Płeć
+        </label>
+      </div>
+
+      <br />
+      <!-- DOB INPUT  -->
+      <div class="text-input text-input--DOB text-input--small">
+        <input
+          type="text"
+          id="1"
+          class="field text-input__field text-input__field--DOB"
+          name="DOB"
+          placeholder="dd / mm / yyyy"
+          autocomplete="off"
+        />
+        <label for="1" class="label text-input__label">
+          <span class="asterisk label__asterisk">*</span>
+          Data urodzenia
+        </label>
+      </div>
+      <br />
+
+      <!-- INPUT WITH PREFIX & POSTFIX (FEE) -->
+      <div
+        class="
+          text-input text-input--prefix text-input--postfix text-input--small
+        "
+      >
+        <input
+          type="text"
+          id="11"
+          class="field text-input__field"
+          name="RATE-hour"
+          placeholder="10"
+          autocomplete="off"
+        />
+        <label for="11" class="postfix text-input__postfix">zł/godzinę</label>
+        <label for="11" class="label text-input__label">
+          <span class="asterisk label__asterisk">*</span>
+          Do
+        </label>
+      </div>
+      <br />
+
+      <div
+        class="
+          text-input text-input--prefix text-input--postfix text-input--small
+        "
+      >
+        <input
+          type="text"
+          id="12"
+          class="field text-input__field"
+          name="RATE-month"
+          placeholder="1000"
+          autocomplete="off"
+        />
+        <label for="12" class="postfix text-input__postfix">zł/miesiąc</label>
+        <label for="12" class="label text-input__label">
+          <span class="asterisk label__asterisk">*</span>
+          Do
+        </label>
+      </div>
+      <br />
+
+      <!-- LONG TEXT INPUT (TITLE) -->
+      <div class="text-input text-input--long">
+        <textarea
+          id="2"
+          class="field text-input__field"
+          name="NAME1"
+          rows="2"
+          maxlength="65"
+          placeholder="Enter your email"
+        ></textarea>
+        <label for="2" class="label text-input__label">
+          <span class="asterisk label__asterisk">*</span>
+          Tytuł ogłoszenia
+        </label>
+      </div>
+
+      <br />
+      <!-- LONG TEXT INPUT (DETAILS) -->
+
+      <div class="text-input text-input--long">
+        <textarea
+          id="6"
+          class="field text-input__field"
+          name="NAME1"
+          rows="6"
+          maxlength="200"
+          placeholder="Enter your email"
+        ></textarea>
+        <label for="6" class="label text-input__label">
+          <span class="asterisk label__asterisk">*</span>
+          Textarea
+        </label>
+        <div class="word-counter text-input__word-counter">140/200</div>
+      </div>
+      <br />
+
+      <!-- GEO INPUT  -->
+      <div class="text-input text-input--geo">
+        <input
+          type="text"
+          id="13"
+          class="field text-input__field"
+          name="GEO"
+          placeholder="54-212, Wrocław"
+          autocomplete="off"
+        />
+        <div class="geo-auto-detect text-input__geo-auto-detect"></div>
+        <ul class="suggestions text-input__suggestions">
+          <li class="item suggestions__item">54-212, Wrocław</li>
+          <li class="item suggestions__item">54-212, Wrocław</li>
+          <li class="item suggestions__item">54-212, Wrocław</li>
+          <li class="item suggestions__item">54-212, Wrocław</li>
+        </ul>
+      </div>
+
+      <br />
+    </div>
+    <!-- * END Just a container END  -->
+
+    <script
+      type="text/javascript"
+      src="scripts/textarea-auto-size-trick.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="scripts/password-visibility-toggler.js"
+    ></script>
+  </body>
+</html>

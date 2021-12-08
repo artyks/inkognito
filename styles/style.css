@@ -1,0 +1,20 @@
+/* ? DESKTOP */
+body {
+  padding: 20px 50px;
+  font: var(--default-font);
+
+  color: var(--default-font-color);
+  background-color: var(--main-bg-color);
+}
+
+:root {
+  --main-bg-color: rgba(241, 251, 249, 1);
+
+  --default-font-color: #16205e;
+  --default-font-family: "Poppins", sans-serif;
+  --default-font-size: 18px;
+  --default-font-weight: 300;
+  --default-font: var(--default-font-weight) var(--default-font-size) var(--default-font-family);
+}
+
+/* ? MOBILE  */

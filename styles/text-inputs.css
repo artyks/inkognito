@@ -1,0 +1,340 @@
+/* ? DESKTOP  */
+
+/* TEXT INPUT GENERAL  */
+
+.text-input {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: start;
+  width: var(--text-input--width);
+}
+
+.text-input--small {
+  width: var(--text-input__small--width);
+}
+
+.text-input__label {
+  width: fit-content;
+  position: relative;
+  order: -1;
+  padding: 0 0 7px 10px;
+
+  font: var(--text-input__label--font);
+}
+
+.text-input__label--hide {
+  display: none;
+}
+
+.text-input__caption {
+  font: var(--text-input__caption--font);
+  margin: 7px 10px 0 10px;
+}
+
+.label__asterisk {
+  display: none;
+  position: absolute;
+  font-size: 26px;
+  font-weight: 400;
+  color: #fe881c;
+  left: -7px;
+  top: -3px;
+}
+
+.label__asterisk--show {
+  display: block;
+}
+
+.text-input__field {
+  height: var(--text-input__field--height);
+  padding: 0 var(--text-input__field--padding) 2px
+    var(--text-input__field--padding);
+
+  font: var(--text-input__field--font);
+  color: var(--text-input__field--font-color);
+
+  border: var(--text-input__field--border);
+  border-radius: var(--text-input__field--border-radius);
+}
+
+.text-input__field:hover {
+  border: var(--text-input__field--hover--border);
+  padding: 0 calc(var(--text-input__field--padding) - 1px) 2px
+    calc(var(--text-input__field--padding) - 1px);
+}
+
+.text-input__field:focus {
+  border: var(--text-input__field--focus--border);
+  padding: 0 calc(var(--text-input__field--padding) - 1px) 2px
+    calc(var(--text-input__field--padding) - 1px);
+}
+
+.text-input--error,
+.text-input--error .text-input__field {
+  border-color: rgba(195, 63, 63, 0.5);
+  color: rgba(195, 63, 63, 1);
+}
+
+.text-input--error .text-input__field:hover {
+  border-color: rgba(195, 63, 63, 0.5);
+}
+.text-input--error .text-input__field:focus {
+  border-color: rgba(195, 63, 63, 0.8);
+}
+
+/* *Success and valid  */
+.text-input--success,
+.text-input--success .text-input__field {
+  border-color: rgba(112, 164, 111, 0.5);
+  color: rgba(112, 164, 111, 1);
+}
+
+.text-input--success .text-input__field:hover {
+  border-color: rgba(112, 164, 111, 0.5);
+}
+.text-input--success .text-input__field:focus {
+  border-color: rgba(112, 164, 111, 0.8);
+}
+
+.text-input__field:required:valid {
+  border-color: rgba(112, 164, 111, 0.5);
+  color: rgba(112, 164, 111, 1);
+}
+.text-input__field:required:valid:hover {
+  border-color: rgba(112, 164, 111, 0.5);
+}
+.text-input__field:required:valid:focus {
+  border-color: rgba(112, 164, 111, 0.8);
+}
+
+/* * INPUT PLACEHOLDERS  */
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font: var(--text-input__placeholder--font);
+  color: var(--text-input__placeholder--color);
+  opacity: var(--text-input__placeholder--opacity);
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  font: var(--text-input__placeholder--font);
+  color: var(--text-input__placeholder--color);
+  opacity: var(--text-input__placeholder--opacity);
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  font: var(--text-input__placeholder--font);
+  color: var(--text-input__placeholder--color);
+  opacity: var(--text-input__placeholder--opacity);
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  font: var(--text-input__placeholder--font);
+  color: var(--text-input__placeholder--color);
+  opacity: var(--text-input__placeholder--opacity);
+}
+
+/* * INPUT PLACEHOLDERS END */
+
+/* PASSWORD INPUT  */
+
+/* todo CHECK IN FireFox! */
+.text-input__field[type="password"]:not(:placeholder-shown) {
+  font-size: 40px;
+  letter-spacing: 1px;
+  padding-bottom: 8px;
+}
+
+.text-input__pswrd-toggler {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  /* background-color: red; */
+}
+.text-input__pswrd-toggler:after {
+  display: block;
+  width: 35px;
+  height: 30px;
+  position: absolute;
+  content: "";
+
+  background: center no-repeat url(../images/crossed-eye.svg);
+  background-color: #fff;
+}
+
+/* PHONE INPUT  */
+
+.text-input--tel .text-input__field {
+  padding: 0 14px 2px 14px;
+}
+
+.text-input--tel .text-input__field:hover {
+  padding: 0 13px 2px 13px;
+}
+
+.text-input--tel .text-input__field:focus {
+  padding: 0 13px 2px 13px;
+}
+
+/* TEL CODE INPUT  */
+
+.text-input--tel-code .text-input__field {
+  padding: 0 45px 2px 45px;
+}
+
+.text-input--tel-code .text-input__field:hover {
+  padding: 0 44px 2px 44px;
+}
+
+.text-input--tel-code .text-input__field:focus {
+  padding: 0 44px 2px 44px;
+}
+
+/* DROPDOWN INPUT (GENDER)  */
+.text-input__field--select-dropdown {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-image: url(../images/dropdown-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 15px) calc(1em - 1px);
+}
+.text-input__field--select-dropdown:hover {
+  background-position: calc(100% - 14px) calc(1em - 2px);
+}
+.text-input__field--select-dropdown:focus {
+  background-position: calc(100% - 14px) calc(1em - 2px);
+}
+
+/* INPUT WITH PREFIX & POSTFIX (HOURLY RATE) */
+.text-input--prefix {
+  display: flex;
+  justify-content: center;
+}
+
+.text-input--prefix .text-input__field {
+  text-align: center;
+  padding: 0 calc(80px + 4px + var(--text-input__field--padding)) 2px 13px;
+}
+
+.text-input--prefix .text-input__label {
+  position: absolute;
+  padding: 0;
+  left: -42px;
+
+  font: var(--text-input__prefix--font);
+}
+
+.text-input__postfix {
+  position: absolute;
+  right: var(--text-input__field--padding);
+  width: 1;
+
+  font: var(--text-input__postfix--font);
+}
+
+/* TEXTAREA  */
+.text-input--long .text-input__field,
+.text-input--short .text-input__field {
+  padding-top: var(--text-input__textarea--padding-top);
+  padding-bottom: var(--text-input__textarea--padding-bottom);
+
+  resize: none;
+  height: unset;
+}
+
+.text-input--long .text-input__field:hover {
+  padding-top: calc(var(--text-input__textarea--padding-top) - 1px);
+  padding-bottom: calc(var(--text-input__textarea--padding-bottom) - 1px);
+}
+
+.text-input--long .text-input__field:focus {
+  padding-top: calc(var(--text-input__textarea--padding-top) - 1px);
+  padding-bottom: calc(var(--text-input__textarea--padding-bottom) - 1px);
+}
+
+.text-input__word-counter {
+  align-self: flex-end;
+  margin-top: 7px;
+  font: var(--text-input__word-counter--font);
+  opacity: var(--text-input__placeholder--opacity);
+}
+
+.text-input--long .text-input__field:hover ~ .text-input__word-counter {
+  opacity: 0.65;
+}
+
+.text-input--long .text-input__field:focus ~ .text-input__word-counter {
+  opacity: 1;
+}
+
+/* GEO INPUT  */
+
+.text-input--geo .text-input__field:focus {
+  border-radius: var(--text-input__field--border-radius)
+    var(--text-input__field--border-radius) 0 0;
+}
+
+.text-input__suggestions {
+  margin: -2px 0 0 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  border: var(--text-input__field--border);
+  border-radius: 0 0 var(--text-input__field--border-radius)
+    var(--text-input__field--border-radius);
+
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.text-input--geo .text-input__field:hover ~ .text-input__suggestions {
+  border: var(--text-input__field--hover--border);
+}
+
+.text-input--geo .text-input__field:focus ~ .text-input__suggestions {
+  border: var(--text-input__field--focus--border);
+}
+
+.suggestions__item {
+  width: 100%;
+  height: var(--text-input__field--height);
+  padding: 1px var(--text-input__field--padding);
+
+  display: flex;
+  align-items: center;
+
+  border-bottom: var(--suggestions__item--border-bottom);
+}
+
+.suggestions__item:last-child {
+  border-bottom: unset;
+}
+
+.suggestions__item:hover {
+  background-color: var(--suggestions__item--hover--bg-color);
+  cursor: pointer;
+}
+
+.text-input__geo-auto-detect {
+  width: 21px;
+  height: var(--text-input__field--height);
+  position: absolute;
+  right: 14px;
+  display: block;
+  background: center no-repeat url(../images/geo-detect-icon.svg);
+}
+
+/* ? TABLET(temporary) AND MOBILE  */
+  
+@media (max-width: 1200px) {
+    
+}

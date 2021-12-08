@@ -1,0 +1,64 @@
+/* ? DESKTOP */
+:root {
+  /* TEXT INPUT GENERAL */
+  --text-input--width: 380px;
+  --text-input__small--width: 170px;
+
+  --text-input__label--font: 500 20px "Poppins", sans-serif;
+  --text-input__caption--font: 300 14px "K2D", sans-serif;
+  --text-input__prefix--font: var(--default-font);
+  --text-input__postfix--font: 400 16px "K2D", sans-serif;
+
+  --text-input__field--height: 45px;
+  --text-input__field--padding: 21px;
+  --text-input__field--border: 1px solid rgba(22, 32, 94, 0.5);
+  --text-input__field--border-radius: 20px;
+  --text-input__field--hover--border: 2px solid rgba(22, 32, 94, 0.5);
+  --text-input__field--focus--border: 2px solid rgba(22, 32, 94, 0.8);
+
+  --text-input__field--font: 400 18px "K2D", sans-serif;
+  --text-input__field--font-color: rgba(22, 32, 94, 1);
+
+  --text-input__placeholder--font: 300 18px "K2D", sans-serif;
+  --text-input__placeholder--color: rgba(22, 32, 94, 1);
+  --text-input__placeholder--opacity: 0.5;
+
+  /* TEXTAREA  */
+  --text-input__textarea--padding-top: 8px;
+  --text-input__textarea--padding-bottom: 12px;
+
+  --text-input__word-counter--font: 400 14px "K2D", sans-serif;
+
+  /* GEO INPUT  */
+
+  --suggestions__item--border-bottom: 1px solid rgba(22, 32, 94, 0.3);
+  --suggestions__item--hover--bg-color: rgba(22, 32, 94, 0.3);
+}
+
+/* ? TABLET(temporary) AND MOBILE  */
+
+@media (max-width: 1200px) {
+  :root {
+    /* TEXT INPUT GENERAL */
+    --text-input--width: 256px;
+    --text-input__small--width: 167px;
+
+    --text-input__label--font: 500 18px "Poppins", sans-serif;
+    --text-input__caption--font: 300 14px "K2D", sans-serif;
+    --text-input__prefix--font: var(--default-font);
+    --text-input__postfix--font: 400 16px "K2D", sans-serif;
+
+    --text-input__field--height: 45px;
+    --text-input__field--padding: 21px;
+
+    --text-input__field--font: 400 18px "K2D", sans-serif;
+
+    --text-input__placeholder--font: 300 18px "K2D", sans-serif;
+
+    /* TEXTAREA  */
+    --text-input__textarea--padding-top: 8px;
+    --text-input__textarea--padding-bottom: 12px;
+
+    --text-input__word-counter--font: 400 14px "K2D", sans-serif;
+  }
+}
