@@ -42,23 +42,23 @@
   box-shadow: var(--button-cta-hover-shadow);
 }
 
-.button-CTA--small {
+.button-CTA-container--small .button-CTA {
   height: var(--button-small-height);
   min-width: var(--button-width);
   font-size: var(--button-small-font-size);
 }
 
-.button-CTA--large {
+.button-CTA-container--large .button-CTA {
   width: var(--button-large-width);
   font-size: var(--button-large-font-size);
   height: var(--button-large-height);
 }
 
-.button-CTA + .button-CTA__caption {
+.button-CTA__caption {
   display: none;
 }
 
-.button-CTA--caption + .button-CTA__caption {
+.button-CTA-container--caption .button-CTA__caption {
   margin-top: 20px;
   display: block;
   width: 215px;
@@ -66,7 +66,7 @@
   font: var(--button-CTA-default-caption-font);
   opacity: var(--button-caption-opacity);
 }
-.button-CTA--caption.button-CTA--large + .button-CTA__caption {
+.button-CTA-container--large .button-CTA__caption {
   width: 215px;
   font: var(--button-CTA-large-caption-font);
 }
@@ -100,21 +100,21 @@
   box-shadow: var(--buton-primary-hover-shadow);
 }
 
-.button-primary--small {
+.button-primary-container--small .button-primary {
   height: var(--button-small-height);
   font-size: var(--button-small-font-size);
 }
-.button-primary--large {
+.button-primary-container--large .button-primary {
   width: var(--button-large-width);
   font-size: var(--button-large-font-size);
   height: var(--button-large-height);
 }
 
-.button-primary + .button-primary__caption {
+.button-primary-container .button-primary-container__caption {
   display: none;
 }
 
-.button-primary--caption + .button-primary__caption {
+.button-primary-container--caption .button-primary-container__caption {
   margin-top: 20px;
   display: block;
   width: 215px;
@@ -122,7 +122,7 @@
   font: var(--button-primary-default-caption-font);
   opacity: var(--button-caption-opacity);
 }
-.button-primary--caption.button-primary--large + .button-primary__caption {
+.button-primary-container--large .button-primary-container__caption {
   width: 215px;
   font: var(--button-primary-large-caption-font);
 }
@@ -255,7 +255,7 @@
   border-radius: var(--button-border-radius);
 }
 
-.radio-button__text-wrapper--width-small {
+.radio-button--width-small .radio-button__text-wrapper {
   min-width: var(--button-width);
 }
 
@@ -267,7 +267,7 @@
   background-color: var(--buton-tertiary-active-bg-color);
 }
 
-.radio-button__text-wrapper--height-small {
+.radio-button--height-small .radio-button__text-wrapper {
   height: var(--button-small-height);
   font-size: var(--button-small-font-size);
 }
@@ -282,7 +282,7 @@
   margin-bottom: auto;
 }
 
-.radio-button__dot--hide {
+.radio-button--dot-hide .radio-button__dot {
   display: none;
 }
 
@@ -504,7 +504,7 @@
   font-size: var(--tab-slider-emoji-active-font-size);
 }
 
-/* CHECKBOX Buttons */
+/* CHECKBOX STICKED */
 
 .checkbox-container {
   width: fit-content;
@@ -713,7 +713,7 @@
   padding: 0 calc(var(--checkbox-chip-padding) - 1px);
 }
 
-/* ROUND CHECKBOX with ICON */
+/* ROUND CHECKBOX (DOMOWA POMOC) */
 
 .round-checkbox-container {
   width: 560px;
@@ -753,22 +753,28 @@
 }
 /* * home care icons */
 .checkbox-wrapper__circle-icon--laundry {
-  background: center/35% no-repeat url(../images/pomoc-domowa-icons/basket_1f9fa.png);
+  background: center/35% no-repeat
+    url(../images/pomoc-domowa-icons/basket_1f9fa.png);
 }
 .checkbox-wrapper__circle-icon--ironing {
-  background: center/35% no-repeat url(../images/pomoc-domowa-icons/necktie_1f454.png);
+  background: center/35% no-repeat
+    url(../images/pomoc-domowa-icons/necktie_1f454.png);
 }
 .checkbox-wrapper__circle-icon--cleaning {
-  background: center/40% no-repeat url(../images/pomoc-domowa-icons/broom_1f9f9.png);
+  background: center/40% no-repeat
+    url(../images/pomoc-domowa-icons/broom_1f9f9.png);
 }
-.checkbox-wrapper__circle-icon--maintainig-cleaniness {
-  background: center/35% no-repeat url(../images/pomoc-domowa-icons/sponge_1f9fd.png);
+.checkbox-wrapper__circle-icon--maintaining-cleaniness {
+  background: center/35% no-repeat
+    url(../images/pomoc-domowa-icons/sponge_1f9fd.png);
 }
 .checkbox-wrapper__circle-icon--cooking {
-  background: center/35% no-repeat url(../images/pomoc-domowa-icons/cooking_1f373.png);
+  background: center/35% no-repeat
+    url(../images/pomoc-domowa-icons/cooking_1f373.png);
 }
 .checkbox-wrapper__circle-icon--pet-care {
-  background: center/35% no-repeat url(../images/pomoc-domowa-icons/paw-prints_1f43e.png);
+  background: center/35% no-repeat
+    url(../images/pomoc-domowa-icons/paw-prints_1f43e.png);
 }
 .checkbox-wrapper__circle-icon--plant-care {
   background: center/35% no-repeat
@@ -853,8 +859,7 @@
   border: var(--circle-attachment-button-border);
   box-shadow: var(--circle-attachment-button-primary-shadow);
 
-  background: center/40px no-repeat
-    url(../images/plus_attach_primary.svg);
+  background: center/40px no-repeat url(../images/plus_attach_primary.svg);
   background-color: var(--circle-attachment-button-primary-bg-color);
 }
 
@@ -864,8 +869,7 @@
 
   box-shadow: var(--circle-attachment-button-small-shadow);
 
-  background: center/29px no-repeat
-    url(../images/plus_attach_small.svg);
+  background: center/29px no-repeat url(../images/plus_attach_small.svg);
   background-color: var(--circle-attachment-button-small-bg-color);
 }
 
@@ -881,7 +885,7 @@
     margin: 0;
   }
 
-  /* CHECKBOX Buttons */
+  /* CHECKBOXES STICKED MOBILE */
 
   /* * 1 column  */
   .checkbox-container--1-columns {
