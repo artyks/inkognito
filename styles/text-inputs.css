@@ -20,7 +20,7 @@
   order: -1;
   padding: 0 0 7px 10px;
 
-  font: var(--text-input__label--font);
+  font: var(--input__label--font);
 }
 
 .text-input__label--hide {

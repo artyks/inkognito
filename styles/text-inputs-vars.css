@@ -4,7 +4,7 @@
   --text-input--width: 380px;
   --text-input__small--width: 170px;
 
-  --text-input__label--font: 500 20px "Poppins", sans-serif;
+  --input__label--font: 500 20px "Poppins", sans-serif;
   --text-input__caption--font: 300 14px "K2D", sans-serif;
   --text-input__prefix--font: var(--default-font);
   --text-input__postfix--font: 400 16px "K2D", sans-serif;
@@ -43,7 +43,7 @@
     --text-input--width: 256px;
     --text-input__small--width: 167px;
 
-    --text-input__label--font: 500 18px "Poppins", sans-serif;
+    --input__label--font: 500 18px "Poppins", sans-serif;
     --text-input__caption--font: 300 14px "K2D", sans-serif;
     --text-input__prefix--font: var(--default-font);
     --text-input__postfix--font: 400 16px "K2D", sans-serif;
